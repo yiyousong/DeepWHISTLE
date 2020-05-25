@@ -163,8 +163,8 @@ if __name__ == '__main__':
 
     print('initializing preprocessing..')
     parser = argparse.ArgumentParser()
-    parser.add_argument('-i','--input', default='fasta.txt', help='input file')
-    parser.add_argument('-g','--gen_input', required=True, help='genome information input file')
+    parser.add_argument('-i','--input', default='example_input/sequence.fasta', help='input file')
+    parser.add_argument('-g','--gen_input', default='example_input/genome.csv', help='genome information input file')
     parser.add_argument('-o','--output', default='%s/output'%(os.path.dirname(os.path.abspath(__file__))), help='output folder')
     parser.add_argument('--model_loc', help='model location, please try default location first')
     parser.add_argument('--encoding', default='fasta', help='use default')
